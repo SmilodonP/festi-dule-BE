@@ -1,182 +1,31 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/models/artist.rb": {
+      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/controllers/api/v1/admin/users_controller.rb": {
         "lines": [
           1,
           1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/spec/models/show_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/models/show.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
+          9,
           6,
           null,
-          1,
-          1,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/spec/models/stage_spec.rb": {
-        "lines": [
-          1,
           null,
-          1,
-          1,
-          2,
-          2,
           null,
-          1,
-          2,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          9,
           null,
           null
         ]
       },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/models/stage.rb": {
+      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/spec/models/user_show_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/models/user_show.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/spec/models/user_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          13,
-          null,
-          2,
-          2,
-          2,
-          2,
-          null,
-          2,
-          2,
-          null,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
           null
         ]
       },
@@ -193,8 +42,55 @@
           1,
           null
         ]
+      },
+      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/krrrl/turing/3mod/projects/final_assessment/festi_dule_be/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          9,
+          null,
+          19,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1737487830
+    "timestamp": 1737502517
   }
 }
