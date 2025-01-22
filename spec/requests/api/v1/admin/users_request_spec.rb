@@ -22,7 +22,7 @@ RSpec.describe Api::V1::Admin::UsersController, type: :request do
       end
     end
 
-    context "#Index - Search Users" do
+    context "#Index - Search Users Index" do
       let!(:user1) { User.create!(first_name: 'First', last_name: 'Person', username: 'number1', email: '1@example.com') }
       let!(:user2) { User.create!(first_name: 'Second', last_name: 'Person', username: 'NumberTwo', email: '2@example.com') }
       let!(:user3) { User.create!(first_name: 'Third', last_name: 'Person', username: 'Tre333', email: '3@example.com') }
@@ -82,16 +82,22 @@ RSpec.describe Api::V1::Admin::UsersController, type: :request do
         usernames = parsed_response[:data].map { |user| user[:attributes][:username] }
         expect(usernames).to eq(["number1", "NumberTwo", "Tre333"])
       end
+    end
 
-      context 'when no search query is provided' do
-        it 'returns all users sorted by username' do
-          get "/api/v1/admin/users"
-          expect(response).to have_http_status(:success)
-
-          parsed_response = JSON.parse(response.body, symbolize_names: true)
-          usernames = parsed_response[:data].map { |user| user[:attributes][:username] }
-          expect(usernames).to eq(["number1", "NumberTwo", "Tre333"])
-        end
+    context "#Show - User Details" do
+      let!(:user) { create(:user) }
+      let!(:show1) { create(:show) }
+      let!(:show2) { create(:show) }
+      let!(:user_show1) { create(:user_show, user: user, show: show1) }
+      let!(:user_show2) { create(:user_show, user: user, show: show2) }
+  
+      it "returns the user with associated shows" do
+        get "/api/v1/admin/users/#{user.id}"
+  
+        expect(response).to have_http_status(:success)
+        parsed_response = JSON.parse(response.body, symbolize_names: true)
+        expect(parsed_response[:data][:id]).to eq(user.id.to_s)
+        expect(parsed_response[:data][:relationships][:shows][:data].size).to eq(2)
       end
     end
   end

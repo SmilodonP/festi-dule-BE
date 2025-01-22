@@ -15,4 +15,9 @@ class Api::V1::Admin::UsersController < ApplicationController
 
     render json: UserSerializer.format_users(@users)
   end
+
+  def show
+    @user = User.find(params[:id])
+    render json: UserSerializer.format_user(@user)
+  end
 end
