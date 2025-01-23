@@ -7,10 +7,10 @@ User.delete_all
 UserShow.delete_all
 
 puts 'Creating users...'
-users = create_list(:user, 10)
+users = create_list(:user, 12)
 
 puts 'Creating artists and stages...'
-artists = create_list(:artist, 10) 
+artists = create_list(:artist, 20) 
 stages = create_list(:stage, 3)
 
 puts 'Creating shows...'

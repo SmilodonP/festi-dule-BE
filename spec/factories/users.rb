@@ -3,6 +3,6 @@ FactoryBot.define do
     first_name { Faker::Name.neutral_first_name }
     last_name { Faker::Name.last_name }
     email { Faker::Internet.unique.email }
-    username { Faker::Internet.unique.username(specifier: 5..10) }
+    username { Faker::Esport.unique.player }
   end
 end

@@ -19,7 +19,7 @@ RSpec.describe "User Shows Request Endpoints:", type: :request do
       delete "/api/v1/admin/users/#{user.id}/shows/999", headers: { "ACCEPT" => "application/json" }
 
       expect(response).to have_http_status(:not_found)
-      expect(response.body).to include("User's Show not found.")
+      expect(response.body).to include("User or Show not found.")
     end
   end
 end
