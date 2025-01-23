@@ -1,10 +1,19 @@
 FactoryBot.define do
   factory :show do
-    date { Faker::Date.forward(days: 30) }
-    start_time { Faker::Time.forward(days: 0, period: :afternoon).strftime('%H:%M:%S') }
-    end_time { (Time.parse(start_time) + 90.minutes).strftime('%H:%M:%S') }
+    date { Faker::Date.forward(days: 100) }
+
+    start_time do
+      Faker::Time.between(
+        from: date.to_time.beginning_of_day + 12.hours, 
+        to: date.to_time.beginning_of_day + 18.hours
+      )
+    end
+
+    end_time do
+      start_time + 90.minutes
+    end
+
     association :artist
     association :stage
   end
 end
-

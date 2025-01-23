@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       namespace :admin do
         resources :users, only: [:index, :show] do
-          resources :user_shows, only: [:index, :destroy]
+          resources :shows, only: [:index, :destroy], controller: 'users/shows'
         end
       end
     end
