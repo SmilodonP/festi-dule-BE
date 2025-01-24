@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :show do
-    date { Faker::Date.forward(days: 100) }
+    date { Faker::Date.forward(from: '2025-06-06', days: 3) }
 
     start_time do
       Faker::Time.between(
